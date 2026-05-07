@@ -37,30 +37,30 @@ Nakori.Life delivers intelligence in their language, on their device, at their p
 
 ```
                 ┌──────────────────────────────────────────────────┐
-                │                Nakori PWA (Android-first)         │
+                │                Nakori PWA (Android-first)        │
                 │  ┌─────────────────────────────────────────────┐ │
                 │  │     Voice-first UI (Whisper PT-BR ASR)      │ │
                 │  └─────────────────────────────────────────────┘ │
-                │     │                                             │
-                │     ▼                                             │
+                │     │                                            │
+                │     ▼                                            │
                 │  ┌──────────────────────────────────────────────┐│
                 │  │  Intent Detection · 55 BR-PT Templates       ││
                 │  │  (tax · credit · health · legal · financial) ││
                 │  └──────────────────────────────────────────────┘│
                 │     │              │              │              │
                 │     ▼              ▼              ▼              │
-                │  ┌──────┐      ┌──────┐      ┌────────────┐    │
-                │  │Nakori│      │Nakori│      │Wallet      │    │
-                │  │AI    │      │Shop  │      │Satoshi/RWA │    │
-                │  └──────┘      └──────┘      └────────────┘    │
+                │  ┌──────┐      ┌──────┐      ┌────────────┐      │
+                │  │Nakori│      │Nakori│      │Wallet      │      │
+                │  │AI    │      │Shop  │      │Satoshi/RWA │      │
+                │  └──────┘      └──────┘      └────────────┘      │
                 │     │              │              │              │
                 │     ▼              ▼              ▼              │
                 │  ┌──────────────────────────────────────────────┐│
                 │  │   Backend (Fastify · Node 20 · MongoDB)      ││
                 │  │   Firebase Auth · Groq Whisper · OpenRouter  ││
                 │  └──────────────────────────────────────────────┘│
-                │     │                                             │
-                │     ▼                                             │
+                │     │                                            │
+                │     ▼                                            │
                 │  ┌──────────────────────────────────────────────┐│
                 │  │   Smart Contracts (SolVM Base / Arbitrum)    ││
                 │  │   Referral · Affiliate split · Yield (Steep) ││
