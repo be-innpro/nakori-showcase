@@ -1,9 +1,9 @@
 # Nakori.Life
 
-> **"AI does. You live." — A voice-first super-app for the 80M Brazilians AI has ignored.**
+> **"AI does. You live." — A voice-first super-app for the lusophone consumer community.**
 > A be-innpro product. Submitted to the **START Rise Challenge 2026**.
 
-[![Status](https://img.shields.io/badge/status-MVP%20%C2%B7%2091.9%25%20built-blue)]()
+[![Status](https://img.shields.io/badge/status-MVP%20%C2%B7%20pre--PMF-blue)]()
 [![License](https://img.shields.io/badge/license-Proprietary-orange)]()
 [![Stack](https://img.shields.io/badge/stack-PWA%20%E2%80%A2%20Node%2020%20%E2%80%A2%20Fastify-success)]()
 
@@ -11,27 +11,24 @@
 
 ## What it is
 
-Nakori.Life is a **voice-first AI super-app** for Brazilian socio-economic classes C and D — 80 million people who can't afford paid AI products and aren't served well by global, English-trained assistants.
+Nakori.Life is a **voice-first AI super-app** for the lusophone consumer community — people whose first interaction with a smartphone is voice, who often aren't well served by global, English-trained assistants, and who need practical access to everyday services without textual friction.
 
 Three integrated experiences in one app:
 
-1. **Nakori AI** — voice-first copilot with 55 Brazilian-Portuguese journey templates (tax, credit, health, legal, financial)
-2. **Nakori Shop** — contextual marketplace with affiliate revenue (Amazon, Hotmart, Shopee)
+1. **Nakori AI** — voice-first copilot with a Portuguese-language journey-template library (tax, credit, health, legal, financial)
+2. **Nakori Shop** — contextual marketplace with affiliate revenue
 3. **Nakori Life** — AI-guided journeys for finance, health, and career
-4. **Wallet Satoshi + Steep** — Bitcoin/RWA wallet for the unbanked, with smart-contract referral incentives
+4. **Wallet (declared compliance roadmap)** — Satoshi + Steep (DeFi/RWA) on a regulatory roadmap (BCB/CVM in Brazil, MiCA in EU). **Not in V1**, conditional on regulatory partnerships.
 
-## Problem
+## Target market — lusophone community
 
-Brazilian classes C and D — 80 million people — are systematically excluded from the AI revolution:
+Nakori.Life addresses the lusophone consumer community in sequence, with each market chosen by scale, infrastructure readiness, and unit-economics validation:
 
-- **78% prefer speaking** to typing — but AI products are chat-first
-- **130M audio messages/day** are sent on WhatsApp; voice is the native interface
-- **Low digital literacy** rules out complex UX
-- **Disposable income €50–€200/month** rules out paid AI subscriptions
-- **No bank account** for ~30% — rules out credit-card-based AI
-- **Low English fluency** rules out unlocalised global assistants
+- **Brazil first by scale** — large addressable Android base in classes C and D, voice-first context (a substantial share of WhatsApp daily traffic is audio rather than text), low fluency in English-language assistants.
+- **Portugal continental and islands** — cultural and linguistic adaptation; the same technical engine, retuned for European-Portuguese variants and local journey templates.
+- **PALOP markets in sequence** — Angola, Mozambique, Cabo Verde — as connectivity and unit economics validate.
 
-Nakori.Life delivers intelligence in their language, on their device, at their price point.
+The mass-market lusophone consumer is structurally underserved: low digital literacy rules out complex chat-first UX, low disposable income rules out enterprise-class subscription pricing, low banking penetration in some segments rules out standard credit-card-first onboarding, and limited fluency in English rules out unlocalised global assistants.
 
 ## Architecture
 
