@@ -56,12 +56,6 @@ The mass-market lusophone consumer is structurally underserved: low digital lite
                 │  │   Backend (Fastify · Node 20 · MongoDB)      ││
                 │  │   Firebase Auth · Groq Whisper · OpenRouter  ││
                 │  └──────────────────────────────────────────────┘│
-                │     │                                            │
-                │     ▼                                            │
-                │  ┌──────────────────────────────────────────────┐│
-                │  │   Smart Contracts (SolVM Base / Arbitrum)    ││
-                │  │   Referral · Affiliate split · Yield (Steep) ││
-                │  └──────────────────────────────────────────────┘│
                 └──────────────────────────────────────────────────┘
 ```
 
@@ -69,12 +63,12 @@ The mass-market lusophone consumer is structurally underserved: low digital lite
 
 Most AI apps are chat-first. Nakori inverts the order:
 
-1. **User speaks** (Whisper PT-BR transcription, ~200 ms latency)
-2. **Intent classifier** routes to one of 55 BR-PT templates
+1. **User speaks** (Whisper PT-BR transcription with adaptation to lusophone variants on the roadmap)
+2. **Intent classifier** routes to a journey template
 3. **Template** assembles a structured query (tax form, credit application, health check-in, ...)
 4. **LLM** generates the answer + a marketplace recommendation if relevant
 5. **TTS** speaks back the answer (optional; user can read it)
-6. **Share button** posts the answer to WhatsApp with `✦ nakori.app` signature → viral K-factor 1.3
+6. **Share button** posts the answer to WhatsApp with a Nakori signature → passive virality
 
 ## Tech stack
 
@@ -83,56 +77,45 @@ Most AI apps are chat-first. Nakori inverts the order:
 | **Frontend** | Next.js 15 PWA · React Native (mobile, post-MVP) |
 | **Backend** | Fastify · Node 20 |
 | **Storage** | MongoDB · Firebase Auth |
-| **Voice** | Groq Whisper PT-BR |
+| **Voice** | Groq Whisper PT-BR (with adaptation to lusophone variants on the roadmap) |
 | **LLM Routing** | OpenRouter / Groq (subscription-tier aware) |
-| **Wallet** | Smart contracts on SolVM Base / Arbitrum |
-| **Distribution** | Native Play Store (0% fee) → iOS month 6+ |
+| **Wallet (roadmap)** | Smart contracts on SolVM Base / Arbitrum — declared compliance roadmap (BCB/CVM in Brazil, MiCA in EU) |
+| **Distribution** | Native app stores (Google Play first, App Store next) + own portal under construction |
 
-## Monetisation (6 streams)
+## Commercial model
 
-| Stream | Mechanism |
-|---|---|
-| **Subscription** (40%) | Freemium → Starter → Pro → Elite (€0.50–€3/month) |
-| **Referral** (20%) | 10% recurring share for 12 months on referred users |
-| **Marketplace affiliate** (15%) | Amazon / Hotmart / Shopee splits (70/30) |
-| **Wallet fees** (10%) | On-chain transaction routing |
-| **Yield share (RWA)** (10%) | Steep DeFi yield split |
-| **Brand integrations** (5%) | Native journey sponsorship |
+Nakori.life is distributed direct-to-consumer through app stores and a portal under construction. Revenue is composed of multiple complementary streams:
+
+- **Subscription** (freemium with broad free tier; tiered paid plans for advanced features)
+- **Marketplace affiliate** (70/30 split with creators)
+- **Referral incentives** (recurring share for a defined period)
+- **Wallet fees** (when the compliance roadmap unlocks Wallet in production)
+- **Brand integrations** (native journey sponsorship, where contextually relevant)
+
+For pricing details and waitlist access, see [be-innpro.com](https://be-innpro.com) or contact `jose@be-innpro.com`.
 
 ## Computational footprint
 
-- **Today**: ~16 production containers; CPU-bound (Whisper inference offloaded to Groq).
-- **At 10× scale**: dedicated GPU after **60K MAU** — margin shifts from 79% to 85%+, and PT-BR fine-tuning becomes feasible. SINES-class infrastructure unlocks unit economics that pure SaaS can't deliver at €0.50/month price points.
-- **Voice traffic peaks**: Brazilian evenings (19h–23h GMT-3) require burst capacity — exactly what liquid-cooled, multi-tenant GPU infra is designed for.
+- **Today**: containerised stack, CPU-bound, voice inference offloaded to Groq.
+- **At scale**: a dedicated GPU substrate (such as a SINES-class facility) becomes essential to keep unit economics aligned with mass-market lusophone-consumer pricing — both for inference cost and for fine-tuning Portuguese-language variants. **Brazilian-evening voice traffic peaks** (a window of high-concurrency audio interaction) require burst capacity that liquid-cooled, multi-tenant GPU infra is built for.
 
 ## Distribution & growth
 
-- **Zero-cost launch**: viral via WhatsApp (`✦ nakori.app` signature on every shared answer)
-- **K-factor 1.3** validated in PMF experiments
-- **Native Play Store** (0% Google fee for our pricing tier)
-- **Micro-influencers CPA-only** (no fixed marketing spend)
-- **Gate week 4**: D7 retention ≥ 20% before scaling spend
+- **Zero-cost launch** via app stores and viral WhatsApp sharing (Nakori signature on every shared answer)
+- **Native app stores** (no aggressive distributor fee on the targeted tier)
+- **CPA-only micro-influencers** (no fixed marketing spend in phase 1)
+- **Validated retention gates** before scaling spend (D7-retention thresholds enforced before any paid acquisition)
 
-## Stage & evidence
+## Stage
 
-- **MVP, 91.9% built** · final QA in progress
-- **55 Brazilian-Portuguese journey templates** ready
+- **MVP, voice-first** · final QA in progress
+- **Portuguese-language journey-template library** ready
 - **OCR + Whisper PT-BR** integrated
-- **Wallet Satoshi + Steep** smart contracts deployed on testnet
-- **PMF experiments** documented; D7 ≥ 20% confirmed in beta cohort
-
-## Trajectory
-
-| Milestone | Target |
-|---|---|
-| **Month 2** | Break-even |
-| **Month 6** | 18K MAU · R$48K MRR |
-| **Month 12** | 90K MAU · R$241K MRR · 79% margin |
-| **2027+** | Expansion to lusophone markets (Portugal, Angola, Mozambique, Cabo Verde) |
+- **PMF experiments** documented; retention gates in place
 
 ## About be-innpro
 
-be-innpro builds **sovereign agentic AI for Europe and the lusophone world** — a unified stack of three production products (Datumlens, ORMAI, Nakori.Life) on one orchestration core. Founded in Lisbon by **José Maria Duque (CEO)** and **Neilsen Alves Seixas (CTO)**.
+be-innpro builds **sovereign agentic AI for Europe and the lusophone world** — four layers, four commercial products: **Forja Process** (methodology), **ORMAI** (agentic cognition), **DatumLens** (B2B EU vertical), **Nakori.life** (B2C lusophone vertical) — on one unified technical core. Founded in Lisbon by **José Maria Duque (CEO)** and **Neilsen Alves Seixas (CTO)**.
 
 Website: [https://be-innpro.com](https://be-innpro.com)
 
